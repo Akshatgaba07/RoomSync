@@ -1,0 +1,33 @@
+{
+ "n_profiles": 60,
+ "n_components": 15,
+ "explained_variance_cumulative": 0.8206896018747192,
+ "sigma2": 61.755839225377905,
+ "k_silhouette": {
+  "3": 0.0797,
+  "4": 0.074,
+  "5": 0.0718,
+  "6": 0.0784,
+  "7": 0.0796
+ },
+ "chosen_k": 3,
+ "archetypes": {
+  "0": [
+   "high weekend=Mostly out with friends (z=+0.86, n=25)",
+   "high study_env=Music with headphones (z=+0.70, n=25)",
+   "low relationship (z=-0.47, n=25)"
+  ],
+  "1": [
+   "high weekend=I go home often (z=+0.90, n=18)",
+   "low clearing (z=-0.73, n=18)",
+   "high tidiness (z=+0.67, n=18)"
+  ],
+  "2": [
+   "low guest_freq (z=-0.87, n=17)",
+   "high weekend=Mostly in the hostel (z=+0.82, n=17)",
+   "low audio (z=-0.77, n=17)"
+  ]
+ },
+ "trained_on": "synthetic demo profiles only (unsupervised; no labels)",
+ "seed": 42
+}

@@ -1,0 +1,18 @@
+services:
+  mongo:
+    image: mongo:7
+    volumes: [mongo_data:/data/db]
+  backend:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      JWT_SECRET: ${JWT_SECRET:-dev-only-change-me}
+      CORS_ORIGINS: http://localhost:8080
+      AUTO_SEED_DEMO: "true"
+    depends_on: [mongo]
+    ports: ["8000:8000"]
+  frontend:
+    build: ./frontend
+    depends_on: [backend]
+    ports: ["8080:80"]
+volumes: { mongo_data: {} }

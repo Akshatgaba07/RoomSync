@@ -1,0 +1,37 @@
+{
+ "mode": "SMOKE_TEST_ON_SIMULATED_LABELS",
+ "n_pairs": 600,
+ "n_train": 340,
+ "n_test": 21,
+ "baseline_mean_of_dimensions_MAE": 15.713829894541751,
+ "ridge": {
+  "MAE": 7.256416946446776,
+  "spearman": 0.8332795640692838
+ },
+ "gbr": {
+  "MAE": 9.662028641977102,
+  "spearman": 0.6278846013189767
+ },
+ "best_model": "ridge",
+ "precision_at_3_ndcg_at_3_students": [
+  0.0,
+  0.996089906749629,
+  4
+ ],
+ "ridge_coefficients": {
+  "sleep": 48.84461959828823,
+  "noise_study": 27.31513700281392,
+  "cleanliness": 19.230031853542968,
+  "food": -0.07669762078546534,
+  "climate": -0.11690837993987492,
+  "entertainment": 2.727482918677387,
+  "guests": 0.6115242513176448,
+  "weekend": 7.529780049681532,
+  "privacy": -3.1904910128302455,
+  "sharing": -0.21982685841597663,
+  "conflict": 0.5270647789039702,
+  "relationship": -1.4934088837096402,
+  "latent": 2.434408894040155
+ },
+ "WARNING": "Labels are simulated. These numbers only show the code runs; they say nothing about real compatibility."
+}

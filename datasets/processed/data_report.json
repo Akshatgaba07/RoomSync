@@ -1,0 +1,43 @@
+{
+ "n_rows": 60,
+ "n_columns": 28,
+ "synthetic_column_values": {
+  "SYNTHETIC - NOT A REAL STUDENT": 60
+ },
+ "n_real_students_in_file": 0,
+ "note": "The SYNTHETIC column is constant: every row is synthetic. The ~10 real Bennett responses are NOT in this file.",
+ "hostel_counts": {
+  "Boys hostel": 30,
+  "Girls hostel": 30
+ },
+ "null_counts": {
+  "How compatible are you with your CURRENT roommate overall?": 60
+ },
+ "label_column": {
+  "name": "How compatible are you with your CURRENT roommate overall?",
+  "non_null": 0,
+  "consequence": "No supervised compatibility labels exist."
+ },
+ "mean_completeness": 1.0,
+ "dealbreaker_frequency": {
+  "Plays music or videos on speaker": 13,
+  "Takes loud calls at night": 13,
+  "Keeps lights / noise on late at night": 11,
+  "Eats non-veg in the room": 11,
+  "Has overnight guests often": 9,
+  "Drinks alcohol in the room": 8,
+  "Keeps the room messy": 7,
+  "Smokes / vapes": 7
+ },
+ "none_of_these_count": 17,
+ "priority_frequency": {
+  "Noise and study environment": 29,
+  "Guests and social life": 27,
+  "Privacy and personal space": 26,
+  "Handling conflict well": 23,
+  "Sharing and borrowing": 22,
+  "Sleep schedule": 20,
+  "Cleanliness": 17,
+  "Food habits": 16
+ }
+}

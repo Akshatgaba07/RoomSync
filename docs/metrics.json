@@ -1,0 +1,73 @@
+{
+ "invariants": {
+  "n_pairs": 870,
+  "max_asymmetry": 0.0,
+  "score_min": 33.80565293488312,
+  "score_max": 83.52720058252791,
+  "score_mean": 48.465472380858486,
+  "score_std": 12.19022159494388,
+  "self_excluded": true,
+  "cross_hostel_excluded": true
+ },
+ "constraints": {
+  "blocked_pair_share": 0.5574712643678161,
+  "mean_score_blocked": 38.935418451941956,
+  "mean_score_unblocked": 60.470864992610466,
+  "strict_eligible_candidates_mean": 12.833333333333334,
+  "strict_eligible_min": 2,
+  "users_with_<5_eligible": 3,
+  "dealbreaker_free_top5_rate_strict": 1.0,
+  "dealbreaker_free_top5_rate_if_not_strict": 0.9666666666666666
+ },
+ "sensitivity_vs_baseline": {
+  "dimension_weights_lognormal_sigma0.3_20runs": {
+   "top5_overlap_mean": 0.9381666666666666,
+   "top5_overlap_min": 0.9133333333333333,
+   "kendall_tau_mean": 0.964088404186408
+  },
+  "no_priority_personalisation": {
+   "top5_overlap_mean": 0.9299999999999999,
+   "kendall_tau_mean": 0.9659485064086707
+  },
+  "latent_alpha_0 (rules only)": {
+   "top5_overlap_mean": 0.9366666666666664,
+   "kendall_tau_mean": 0.9565713832692267
+  },
+  "latent_alpha_0.5": {
+   "top5_overlap_mean": 0.8766666666666666,
+   "kendall_tau_mean": 0.9214355085004026
+  }
+ },
+ "rule_vs_latent_spearman": 0.42924578239405237,
+ "latent_model": {
+  "n_components": 15,
+  "cumulative_variance": 0.8206896018747192,
+  "silhouette_by_k": {
+   "3": 0.07968684387623853,
+   "4": 0.07398782213530802,
+   "5": 0.07177815372091309,
+   "6": 0.07839243551955613,
+   "7": 0.07961155452954213
+  },
+  "chosen_k": 3,
+  "best_silhouette": 0.07968684387623853,
+  "bootstrap_ARI_mean": 0.2457295485094932,
+  "bootstrap_ARI_std": 0.1266895746624083,
+  "heldout_students": 12,
+  "heldout_pair_similarity_spearman_train_fit_vs_full_fit": 0.869074209372717
+ },
+ "dimension_influence_on_score_spread": {
+  "sleep": 0.09843880867269826,
+  "noise_study": 0.09342827687903789,
+  "cleanliness": 0.12088878242508318,
+  "food": 0.1176288150478449,
+  "climate": 0.0976027619232268,
+  "entertainment": 0.05483428033939202,
+  "guests": 0.05342957078708002,
+  "weekend": 0.09751426050198188,
+  "privacy": 0.051004588006475116,
+  "sharing": 0.07137586280026863,
+  "conflict": 0.06919273883737313,
+  "relationship": 0.07466125377953824
+ }
+}
